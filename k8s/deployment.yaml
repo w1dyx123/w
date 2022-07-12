@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: qiyueshier
+  name: qiyue
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: qiyueshier
+      app: qiyue
   template:
     metadata:
       labels:
-        app: qiyueshier
+        app: qiyue
     spec:
       containers:
-      - image: okteto.dev/qiyueshier:latest
-        name: qiyueshier
+      - image: okteto.dev/qiyue:latest
+        name: qiyue
         ports:
         - containerPort: 8080
         env:
