@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: qi
+  name: q
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: qi
+      app: q
   template:
     metadata:
       labels:
-        app: qi
+        app: q
     spec:
       containers:
-      - image: okteto.dev/qi:latest
-        name: qi
+      - image: okteto.dev/q:latest
+        name: q
         ports:
         - containerPort: 8080
         env:
